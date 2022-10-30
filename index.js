@@ -110,3 +110,203 @@
 // console.log(checkForSpam('Latest technology news'));
 // console.log(checkForSpam('JavaScript weekly newsletter'));
 // console.log(checkForSpam('Get best sale offers now!'));
+
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = 'jqueryismyjam';
+//   // Change code below this line
+//   // let message;
+//   if (password === ADMIN_PASSWORD) {
+//     return 'Welcome!';
+//   }
+//   return 'Access denied, wrong password!';
+//   // return message;
+//   // Change code above this line
+// }
+// console.log(checkPassword('mangohackzor'));
+// console.log(checkPassword('jqueryismyjam'));
+
+// function splitMessage(message, delimiter) {
+//   let words;
+//   // Change code below this line
+
+//   splitMessage.split(' ');
+//   // Change code above this line
+//   return words;
+// }
+
+// // console.log(splitMessage.split('Mango', ''));
+
+//
+//
+// .......................................................
+
+// .......................................................
+
+// ===========================11 авто 2 модуль
+// ====================
+
+// .......................................................
+
+// .......................................................
+
+// function calculateEngravingPrice(message, pricePerWord) {
+//   // Change code below this line
+//   return message.split(' ').length * pricePerWord;
+//   // Change code above this line
+// }
+// console.log(calculateEngravingPrice('JavaScript is in avto in my blood', 10));
+
+// function slugify(title) {
+//   // Change code below this line
+//   return title.toLowerCase.split(' ');
+//   title.join('-');
+
+//   // Change code above this line
+// }
+// console.log(slugify('Arrays for begginers'));
+// 13
+// 13
+// 13 авотпровірка
+// 13
+// 13
+// function slugify(title) {
+//   // Change code below this line
+
+//   let slug = title.toLowerCase().split(' ').join('-');
+//   //   slug.join('-');
+
+//   return slug;
+//   // Change code above this line
+// }
+// console.log(slugify('Arrays for begginers'));
+// 16
+// 16
+// 16
+// 16
+// 16
+// 16
+// 16
+
+// function makeArray(firstArray, secondArray, maxLength) {
+//   return firstArray.concat(secondArray).slice(0, maxLength);
+// }
+// console.log(makeArray(['Mango', 'Poly'], ['Ajax', 'Chelsea'], 3));
+
+// /
+
+// //
+// // 25
+// function getCommonElements(array1, array2) {
+//   newArray = [];
+
+//   for (let element of array1) {
+//     if (array2.includes(element)) {
+//       newArray.push(element);
+//     }
+//   }
+//   return newArray;
+// }
+// console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
+// console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+
+// .......................................................
+
+// .......................................................
+
+// 1 урок з ментором
+//
+
+// .......................................................
+
+// .......................................................
+
+// Напишіть 3 цикла:
+// // 1й цикл: выводить в консоль числа від max до min по зменшеню (убыванию).
+// // 2й цикл: виводить в консоль усі парні (четные) числа від min до max.
+// // 3й цикл: виводить в консоль суму усіх парних (четных) чисел від min до max
+// const max = 50;
+// const min = 23;
+
+// const max = 50;
+// const min = 23;
+// let total = 0;
+// // for (let i = min; i <= max; i += 1) {
+// //   if (i % 2 === 0) {
+// //     console.log(i);
+// //   }
+// // }
+// for (let i = 0; i <= max; i += 1) {
+//   if (i % 2 === 0) {
+//     total += i;
+//   }
+// }
+// console.log(total);
+
+//
+
+// .......................................................
+
+// .......................................................
+
+// автоперевірка 3 модуль
+//
+
+// .......................................................
+// .......................................................
+
+// Перебери об'єкт apartment, використовуючи цикл for...in, і запиши в масив keys всі його ключі, а в масив values всі значення його властивостей.
+
+//
+// const apartment = {
+//   descr: 'Spacious apartment in the city center',
+//   rating: 4,
+//   price: 2153,
+// };
+// const keys = ['descr', 'rating', 'price'];
+// const values = ['Spacious apartment in the city center', 4, 2153];
+// // Change code below this line
+// for (const keys in apartment) {
+//   console.log(keys);
+// }
+// for (let values in apartment) {
+//   console.log(apartment[values]);
+// }
+
+//
+//
+// function countProps(object) {
+//   // Change code below this line
+//   let propCount = 0;
+//   const keys = Object.keys(object);
+//   for (const key in keys) {
+//     if (keys.hasOwnProperty(key)) {
+//       propCount += 1;
+//     }
+//   }
+
+//   return propCount;
+//   // Change code above this line
+// }
+// // console.log(countProps({}));
+// console.log(countProps({ name: 'Mango', age: 2 }));
+
+//
+//
+//
+//
+
+function countProps(object) {
+  // Change code below this line
+  let propCount = 0;
+  const keys = Object.keys(object);
+
+  for (const key in keys) {
+    if (keys.hasOwnProperty(key)) {
+      propCount += 1;
+    }
+  }
+
+  return propCount;
+  // Change code above this line
+}
+console.log(countProps({ name: 'Mango', age: 2 }));
