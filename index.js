@@ -385,8 +385,56 @@
 // 19
 // .................................................
 
-// console.log((category = []));
-// Change code above this line
+// const products = [
+//   { name: 'Radar', price: 1300, quantity: 4 },
+//   { name: 'Scanner', price: 2700, quantity: 3 },
+//   { name: 'Droid', price: 400, quantity: 7 },
+//   { name: 'Grip', price: 1200, quantity: 9 },
+// ];
+
+// function getAllPropValues(propName) {
+//   // Change code below this line
+//   result = [];
+//   for (let product of products) {
+//     if (Object.keys(product).includes(propName)) {
+//       result.push(product[propName]);
+//     }
+//   }
+//   return result;
+//   // Change code above this line
+// }
 
 // console.log(getAllPropValues('name'));
+// console.log(getAllPropValues('price'));
 // console.log(getAllPropValues('quantity'));
+// console.log(getAllPropValues('sdasd'));
+//
+//
+//
+// ..................................
+// // 20 avto
+// Напиши функцію calculateTotalPrice(productName), яка приймає один параметр productName - назва товару. Функція повинна повернути загальну вартість (ціна * кількість) товару з таким ім'ям з масиву products.
+// ...................................
+// const products = [
+//   { name: 'Radar', price: 1300, quantity: 4 },
+//   { name: 'Scanner', price: 2700, quantity: 3 },
+//   { name: 'Droid', price: 400, quantity: 7 },
+//   { name: 'Grip', price: 1200, quantity: 9 },
+// ];
+
+// function calculateTotalPrice(productName) {
+//   // Change code below this line
+
+//   for (let newName of products) {
+//     // console.log(names);
+//     if (productName === newName.name) {
+//       result = newName.price * newName.quantity;
+//       return result;
+//     }
+//   }
+
+//   return null;
+
+//   // Change code above this line
+// }
+// console.log(calculateTotalPrice('Radar'));
