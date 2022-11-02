@@ -196,3 +196,57 @@
 //   // Change code above this line
 // }
 // console.log(calculateTotalPrice('Radar'));
+//
+//
+//.........................................
+// 33
+//
+//..................
+// // Change code below this line
+// function findMatches(firstNumber, ...numbers) {
+//   const matches = []; // Don't change this line
+
+//   for (let number of firstNumber) {
+//     if (numbers.includes(number)) {
+//       matches.push(number);
+//     }
+//   }
+//   // Change code above this line
+//   // console.log(matches);
+//   return matches;
+// }
+
+// console.log(findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7));
+//
+//
+// //...................................
+// //  39
+// //
+// //.....................................
+// const atTheOldToad = {
+//   potions: ['Speed potion', 'Dragon breath', 'Stone skin'],
+//   removePotion(potionName) {
+//     // Change code below this line
+
+//     for (let i = 0; i < this.potions.length; i += 1) {
+//       if (potionName === this.potions[i]) {
+//         console.log(`знайшли і'мя:`, potionName);
+//         console.log(`індекс елемента `, i);
+//         //`вирізає елемент `splice
+//         this.potions.splice(i, 1);
+//         console.log(this.potions);
+//       }
+//     }
+//   },
+// };
+
+// atTheOldToad.removePotion('Dragon breath');
+// // console.log(atTheOldToad.potions);
+// // atTheOldToad.removePotion('Speed potion');
+
+//
+//..................................
+//
+//...............41
+//
+//................................
