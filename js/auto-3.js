@@ -250,3 +250,68 @@
 //...............41
 //
 //................................
+const atTheOldToad = {
+  potions: [
+    { name: 'Speed potion', price: 460 },
+    { name: 'Dragon breath', price: 780 },
+    { name: 'Stone skin', price: 520 },
+    { name: 'Speed potion', price: 460 },
+    { name: 'Dragon breath', price: 780 },
+    { name: 'Stone skin', price: 520 },
+  ],
+  // Change code below this line
+  getPotions() {
+    return this.potions;
+  },
+
+  // добавляє продукт якщо такого  нема в списку
+  addPotion(newPotion) {
+    for (const item of this.potions) {
+      if (item.name === newPotion.name) {
+        console.log(
+          `' вже є у вашому інвентарі!:' Error! Potion ${newPotion.name} is already in your inventory!`
+        );
+        return `Error! Potion ${newPotion.name} is already in your inventory!`;
+      }
+    }
+    this.potions.push(newPotion);
+    console.log('новий продукт добавляє ', this.potions);
+  },
+  //видаляє продукт якщо він є
+  removePotion(potionName) {
+    for (let i = 0; i < this.potions.length; i += 1) {
+      if (this.potions[i].name === potionName) {
+        console.log('видаляє продукт якщо він є', this.potions.splice(i, 1));
+        return;
+      }
+    }
+    console.log(
+      ` 'якщо такого продукту нема залишає таким як був:'Potion ${potionName} is not in inventory!`
+    );
+    return `Potion ${potionName} is not in inventory!`;
+  },
+  updatePotionName(oldName, newName) {
+    for (let i = 0; i < this.potions.length; i += 1) {
+      if (oldName === this.potions[i].name) {
+        this.potions[i].name = newName;
+        this.potions.splice(i, 1, newName);
+        console.log('заміняє старий на новий ', this.potions);
+      }
+    }
+    return `Potion ${oldName} is not in inventory!`;
+  },
+  // Change code above this line
+};
+
+console.table(atTheOldToad.potions);
+
+atTheOldToad.getPotions();
+atTheOldToad.addPotion;
+atTheOldToad.addPotion({ name: 'asdfDragon breath', price: 780 });
+atTheOldToad.addPotion({ name: 'Drssagon breath', price: 700 });
+atTheOldToad.removePotion('Dragon breath');
+atTheOldToad.removePotion('Speed potion');
+atTheOldToad.updatePotionName('Dragon breath', 'Polymorth');
+atTheOldToad.updatePotionName('Stone skin', 'Invulnerability potion');
+
+console.table(atTheOldToad.potions);
