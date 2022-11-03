@@ -308,7 +308,7 @@ console.table(atTheOldToad.potions);
 atTheOldToad.getPotions();
 atTheOldToad.addPotion;
 atTheOldToad.addPotion({ name: 'asdfDragon breath', price: 780 });
-atTheOldToad.addPotion({ name: 'Drssagon breath', price: 700 });
+atTheOldToad.addPotion({ name: 'Dragon breath', price: 700 });
 atTheOldToad.removePotion('Dragon breath');
 atTheOldToad.removePotion('Speed potion');
 atTheOldToad.updatePotionName('Dragon breath', 'Polymorth');
