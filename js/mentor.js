@@ -40,37 +40,71 @@
 // Виводимо повідомлення, що тур оплачений і залишок на рахунку користувача.
 //
 
-const countries = ['Ukraine', 'Poland', 'Croatia', 'Montenegro', 'France', 'USA'];
-const countriesPrice = [100, 200, 300, 400, 500, 600];
-// let userName;
-// let userPass;
-// let userCredits;
+// const countries = ['Ukraine', 'Poland', 'Croatia', 'Montenegro', 'France', 'USA'];
+// const countriesPrice = [100, 200, 300, 400, 500, 600];
+
+// // let userName;
+// // let userPass;
+// // let userCredits;
+// // let userCountry;
+// // let maxPrice;
+// //...................
+// // Авторизация.....
+// // //..............
+// let userName = prompt('your username');
+// console.log('your username is', userName);
+// //
+// let userPass = prompt('your userpass ');
+// console.log('your userpass is', userPass);
+
+// // // // ...........................логін
+
+// while (userName !== prompt('login')) {
+//   console.log(`Try again!`);
+// }
+// console.log(`login success!`);
+// //
+// while (userPass !== prompt('your userpass')) {
+//   console.log(`Try again!`);
+// }
+// console.log(`login success!`);
+
+// //....................... скільки в нас є грошей для подорожі
+// //
+
+// let maxPrice = prompt('maxPrice');
+// // // maxPrice = Number(maxPrice);
+// console.log(maxPrice);
+
+// // let maxPrice = 1500;
+// let newCountries = countries.slice(', ');
+// // console.log(newCountries);
+// let newPrice = countriesPrice.slice(', ');
+// // console.log(newPrice);
+// let newCountriesPrice = [];
+// let userCredits = 0;
 // let userCountry;
-// let maxPrice;
-
-let userName = prompt('your username');
-console.log('your username is', userName);
-//
-let userPass = prompt('your userpass ');
-console.log('your userpass is', userPass);
-//
-
-const login = prompt('login') === userName ? `login success!` : prompt(`Try again!`);
-console.log(login);
-
-const password = prompt('password') === userPass ? `login success!` : prompt(`Try again!`);
-console.log(password);
-
-// let userCredits = prompt();
-// userCredits = Number(userCredits);
-// console.log(userCredits);
-// let newCountry = countries => {
-//   let userCountry = [];
-//   for (let countrie of countries.length) {
-//     if (countrie === countriesPrice) {
-//       userCountry.push(countrie);
-//     }
+// for (let countrie of newCountries) {
+//   const index = newCountries.indexOf(countrie);
+//   //   console.log(countrie, newPrice[index]);
+//   if (maxPrice >= newPrice[index]) {
+//     newCountriesPrice.push(countrie);
 //   }
-//   console.log(userCountry);
-//   return userCountry;
-// };
+// }
+
+// alert(newCountriesPrice.join(',  '));
+// // console.log('Available Countries are ', newCountriesPrice);
+// userCountry = prompt('userCountry');
+// console.log('you have successful', userCountry);
+// // ..
+
+// for (let price of newPrice) {
+//   const index = newPrice.indexOf(price);
+//   //   console.log('ціна краіни ', newCountriesPrice[index], price);
+//   if (userCountry === newCountriesPrice[index]) {
+//     userCredits = maxPrice - price;
+//   }
+// }
+
+// console.log('the balance of the users credits', userCredits);
+// alert(`'you have successful', ${userCountry} , the balance of the users credits, ${userCredits}`);
