@@ -43,21 +43,16 @@
 // const countries = ['Ukraine', 'Poland', 'Croatia', 'Montenegro', 'France', 'USA'];
 // const countriesPrice = [100, 200, 300, 400, 500, 600];
 
-// // let userName;
-// // let userPass;
-// // let userCredits;
-// // let userCountry;
-// // let maxPrice;
-// //...................
+// // ...................
 // // Авторизация.....
-// // //..............
+// // // //..............
 // let userName = prompt('your username');
 // console.log('your username is', userName);
 // //
 // let userPass = prompt('your userpass ');
 // console.log('your userpass is', userPass);
 
-// // // // ...........................логін
+// // // ...........................логін
 
 // while (userName !== prompt('login')) {
 //   console.log(`Try again!`);
@@ -69,8 +64,7 @@
 // }
 // console.log(`login success!`);
 
-// //....................... скільки в нас є грошей для подорожі
-// //
+// // ....................... скільки в нас є грошей для подорожі
 
 // let maxPrice = prompt('maxPrice');
 // // // maxPrice = Number(maxPrice);
@@ -108,3 +102,88 @@
 
 // console.log('the balance of the users credits', userCredits);
 // alert(`'you have successful', ${userCountry} , the balance of the users credits, ${userCredits}`);
+
+// // Реалізуйте result
+// const a = ['a', 'b', 'c'];
+// const b = [1, [2, 3]];
+// const c = 0;
+// const d = [...b].slice(1);
+// let result = [...a, c, ...d];
+// console.log(result); // ['a', 'b', 'c', 0, 1, 2, 3]
+//................................
+//................................
+// // // Реалізуйте result
+// const a = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
+// const a1 = [];
+// console.log(result); // ["a", "b", "c", "a", "b", "c", "g", "h"]
+
+// Реалізуйте функцію, яка розгладить масив:
+// const arr = [1, 2, [3, 4], [5, 6], 7];
+// const foo = arr => {
+//   let newArry = [];
+//   for (let el of arr) {
+//     if (Array.isArray(el)) {
+//       newArry.push(...el);
+//     } else {
+//       newArry.push(el);
+//     }
+//     // console.log(el);
+//   }
+//   return newArry;
+// };
+
+// console.log(foo(arr)); // [1, 2, 3, 4, 5, 6, 7]
+//
+//
+//
+//
+// 2 Д/З
+//
+//
+// Домашка: "Delivery"
+// Ви пропонуєте користувачу список доступних ресторанів для замовлення їжі.
+// Користувач обирає конкретний ресторан і отримує список доступних пунктів в меню для замовлення із вказанням їх вартості.
+// Користувач обирає своє замовлення, після чого має отримати його підтвердження та основну інформацію: "що замовив, вартість та час доставки".
+// const restaurants = [
+//   {
+//     order: [],
+//     brand: "KFC",
+//     menu: {
+//       chicken: 50,
+//       burger: 50,
+//     },
+//     deliveryTime: 60,
+//   },
+//   {
+//     order: [],
+//     brand: "mcDonalds",
+//     menu: {
+//       cola: 25,
+//       burger: 30,
+//     },
+//     deliveryTime: 30,
+//   },
+//   {
+//     order: [],
+//     brand: "Burger King",
+//     menu: {
+//       burgerXXL: 170,
+//       burger: 70,
+//     },
+//     deliveryTime: 20,
+//   },
+// ];
+// const services = {
+//   showMenu() {},
+//   getMenu() {},
+//   addOrder() {},
+//   confirmOrder() {},
+// };
+// const torpedaDelivery = {
+//   order: [],
+//   chosenRestaurant: "",
+//   getAvailableRestaurants() {},
+//   chooseRestaurant() {},
+//   chooseDishes() {},
+// };
+// torpedaDelivery.chooseRestaurant();
