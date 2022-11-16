@@ -182,8 +182,38 @@ const restaurants = [
 // const torpedaDelivery = {
 //   order: [],
 //   chosenRestaurant: "", обрати ресторан
-//   getAvailableRestaurants() {},
+//   getAvailableRestaurants() {}, доступні ресторани
 //   chooseRestaurant() {},
 //   chooseDishes() {},
 // };
 // torpedaDelivery.chooseRestaurant();
+//  chosenRestaurant = '';
+
+// доступні ресторани
+const getAvailableRestaurants = restaurants.map(branD => branD.brand).join(',  ');
+console.log(getAvailableRestaurants);
+// обираємо ресторан
+// const chosenRestaurant = prompt(`Оберіть ресторан:  ${getAvailableRestaurants}`);
+let chosenRestaurant = 'Burger King';
+// меню вибраного ресторану
+const showMenu = restaurants
+  .filter(brendN => brendN.brand === chosenRestaurant)
+  .map(menuB => menuB.menu);
+// console.log(...showMenu);
+//  список меню проблема
+
+const key = Object.keys(...showMenu);
+const price = Object.values(...showMenu);
+console.log(`${key[0]} ціна:  ${price[0]}`);
+console.log(`${key[1]} ціна:  ${price[1]}`);
+
+let confirmOrder = prompt(`що бажаєте:  ${key.join(',  ')}`);
+console.log();
+
+//час очікування доставки
+const newDeliveryTime = restaurants
+  .filter(brendN => brendN.brand === chosenRestaurant)
+  .map(time => time.deliveryTime);
+const newTime = Object.values(newDeliveryTime);
+alert(`ваше замовлення '${confirmOrder}' час очікування доставки ${newTime}хв`);
+console.log(`ваше замовлення "${confirmOrder}" час очікування доставки ${newTime}хв`);

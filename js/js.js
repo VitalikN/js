@@ -13,32 +13,32 @@
 //       ? 'Not enough goods in stock!'
 //       : 'Order is processed, our manager will contact you.';
 
-// if (available >= ordered) {
-//    message = 'Not enough goods in stock!';
-//  } else {
-//    message = 'Order is processed, our manager will contact you.';
-//  }
+//   if (available >= ordered) {
+//     message = 'Not enough goods in stock!';
+//   } else {
+//     message = 'Order is processed, our manager will contact you.';
+//   }
 //   // Change code above this line
 //   return message;
 // }
 
-//
+// //
 ///////////////////////////////////////
 
-// // відео репети 1:33хв задача
+// відео репети 1:33хв задача
 // //
 // //
 // const cart = {
 //   items: [],
 //   getItems() {
-//     return this.items;
+//     // return this.items;
 //   },
 //   add(product) {
 //     // console.table(this.items);
 //     for (const item of this.items) {
 //       if (item.name === product.name) {
 //         item.quantity += 1;
-//         return;
+//         // return;
 //       }
 //     }
 //     const newProduct = {
@@ -95,7 +95,7 @@
 // // cart.add({ name: 'Grip', price: 1200 });
 // //............................................
 
-// console.table(cart.getItems());
+// // console.table(cart.getItems());
 
 // // загальна вартість
 
