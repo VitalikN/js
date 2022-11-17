@@ -20,7 +20,7 @@ const restaurants = [
     brand: 'mcDonalds',
     menu: {
       cola: 25,
-      burger: 30,
+      burger: 70,
       frenchfries: 40,
     },
     deliveryTime: 30,
@@ -53,45 +53,41 @@ const restaurants = [
 // torpedaDelivery.chooseRestaurant();
 //  chosenRestaurant = '';
 
-console.log();
 // доступні ресторани
-const getAvailableRestaurants = restaurants.map(branD => branD.brand).join(',  ');
-console.log(getAvailableRestaurants);
+const getAvailableRestaurants = restaurants.map(restaurant => restaurant.brand).join(',  ');
+// console.log(getAvailableRestaurants);
 // обираємо ресторан
 const chosenRestaurant = prompt(`Оберіть ресторан:  ${getAvailableRestaurants}`);
 // let chosenRestaurant = 'Burger King';
 
 // меню вибраного ресторану
 const showMenu = restaurants
-  .filter(brendN => brendN.brand === chosenRestaurant)
+  .filter(restaurant => restaurant.brand === chosenRestaurant)
   .map(menuB => menuB.menu);
 // console.log(...showMenu);
 
 //  список меню проблема
-
 const keys = Object.entries(...showMenu);
-const newOrder = [];
+const yourOrder = [];
 const orderPrice = [];
 for (const [product, price] of keys) {
-  newOrder.push(product);
+  yourOrder.push(product);
   orderPrice.push(price);
   console.log(`${product} ціна : ${price} `);
 }
 
-let confirmOrder = prompt(`що бажаєте:  ${newOrder.join(',  ')}`);
-console.log(`ваше замовлення ${confirmOrder}`);
+let confirmOrder = prompt(`що бажаєте:  ${yourOrder.join(',  ')}`);
+// console.log(`ваше замовлення ${confirmOrder}`);
 // console.log(orderPrice);
 
 const finalcost = [];
-
 for (const price of orderPrice) {
   const index = orderPrice.indexOf(price);
 
-  if (confirmOrder === newOrder[index]) {
+  if (confirmOrder === yourOrder[index]) {
     finalcost.push(price);
   }
 }
-
 // час очікування доставки
 const newDeliveryTime = restaurants
   .filter(brendN => brendN.brand === chosenRestaurant)
@@ -99,9 +95,9 @@ const newDeliveryTime = restaurants
 const newTime = Object.values(newDeliveryTime);
 
 alert(
-  `ваше замовлення '${confirmOrder}' вартість до сплати ${finalcost}грн час очікування доставки ${newTime}хв`
+  `ваше замовлення '${confirmOrder}' вартість до сплати ${finalcost}грн час очікування доставки ${newTime}хв ${chosenRestaurant}`
 );
 
 console.log(
-  `ваше замовлення "${confirmOrder}" вартість до сплати ${finalcost}грн час очікування доставки ${newTime}хв`
+  `ваше замовлення "${confirmOrder}" вартість до сплати ${finalcost}грн час очікування доставки ${newTime}хв  ${chosenRestaurant}`
 );
