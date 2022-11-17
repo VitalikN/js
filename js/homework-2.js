@@ -70,10 +70,11 @@ const showMenu = restaurants
 const keys = Object.entries(...showMenu);
 const yourOrder = [];
 const orderPrice = [];
+
 for (const [product, price] of keys) {
+  console.log(`${product} ціна : ${price} `);
   yourOrder.push(product);
   orderPrice.push(price);
-  console.log(`${product} ціна : ${price} `);
 }
 
 let confirmOrder = prompt(`що бажаєте:  ${yourOrder.join(',  ')}`);
@@ -90,7 +91,7 @@ for (const price of orderPrice) {
 }
 // час очікування доставки
 const newDeliveryTime = restaurants
-  .filter(brendN => brendN.brand === chosenRestaurant)
+  .filter(restaurant => restaurant.brand === chosenRestaurant)
   .map(time => time.deliveryTime);
 const newTime = Object.values(newDeliveryTime);
 
