@@ -70,7 +70,7 @@ const showMenu = restaurants
 const keys = Object.entries(...showMenu);
 const yourOrder = [];
 const orderPrice = [];
-
+const finalcost = [];
 for (const [product, price] of keys) {
   console.log(`${product} ціна : ${price} `);
   yourOrder.push(product);
@@ -81,7 +81,6 @@ let confirmOrder = prompt(`що бажаєте:  ${yourOrder.join(',  ')}`);
 // console.log(`ваше замовлення ${confirmOrder}`);
 // console.log(orderPrice);
 
-const finalcost = [];
 for (const price of orderPrice) {
   const index = orderPrice.indexOf(price);
 
